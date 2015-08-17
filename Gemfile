@@ -51,3 +51,5 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'devise', '>= 3.2.4'
 
 gem 'simple_form'
+
+gem 'factory_girl_rails', '~> 4.0'
