@@ -3,6 +3,23 @@ body {
 	/* Traditional Garamond-based serif stack */
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
+
+.booyah-box {
+  -moz-box-shadow: 2px 2px 5px #BDBBBB;
+  -webkit-box-shadow: 2px 2px 5px #BDBBBB;
+  box-shadow: 2px 2px 5px #BDBBBB;
+  background: rgba(237, 232, 232, 0.6);
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top:  15px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+   margin-bottom: 10px;
+}
+
 .hero {
 	background: url('notepad.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -37,4 +54,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .btn {
 		border-radius: 0;
+}
+
+.showlogin {
+  color: white;
+  padding: 15px;
+
 }
