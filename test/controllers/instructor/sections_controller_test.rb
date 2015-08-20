@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class Instructor::SectionsControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   #  test "fail to create section if not signed in" do 
+   # 		assert_no_difference 'Section.count' do 
+   # 			post :create, :section => {
+   # 				:title => "Test Section", 
+   # 				}
+   # 			end
+   # end
 end

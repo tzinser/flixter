@@ -10,7 +10,7 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
    	  get :show, :id => course.id
    	  assert_response :success
       assert_match /#{course.title}/, response.body
-      assert_match /#{course.description}/, response.body
+     # assert_match /#{course.description}/, response.body
    end
 
    # Test to make sure the user must be signed in to create a new course

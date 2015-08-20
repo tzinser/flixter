@@ -1,4 +1,6 @@
 class Instructor::LessonsController < ApplicationController
+	before_action :authenticate_user!
+	
 	def new
 		@section = Section.find(params[:section_id])
 		@lesson = Lesson.new
@@ -7,7 +9,11 @@ class Instructor::LessonsController < ApplicationController
 	def create
 		@section = Section.find(params[:section_id])
 		@lesson = @section.lessons.create(lesson_params)
-		redirect_to instructor_course_path(@section.course)
+		if @lesson.valid?
+			redirect_to instructor_course_path(@section.course)
+		else
+			render :new, :status => :unprocessible_entity
+		end
 	end
 
 	private
