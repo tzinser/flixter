@@ -53,3 +53,9 @@ gem 'devise', '>= 3.2.4'
 gem 'simple_form'
 
 gem 'factory_girl_rails', '~> 4.0'
+
+gem 'carrierwave'
+
+#For using Amazon S3
+gem 'figaro'
+gem 'fog', '~> 1.3.1'
