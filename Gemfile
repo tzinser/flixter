@@ -64,3 +64,6 @@ gem 'fog', '~> 1.3.1'
 
 #image manipulation
 gem 'mini_magick'
+
+#video integration
+gem 'carrierwave-aws'
