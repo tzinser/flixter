@@ -70,3 +70,6 @@ gem 'carrierwave-aws'
 
 #payment processing
 gem 'stripe'
+
+#ranking database rows
+gem 'ranked-model'
