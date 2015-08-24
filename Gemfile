@@ -67,3 +67,6 @@ gem 'mini_magick'
 
 #video integration
 gem 'carrierwave-aws'
+
+#payment processing
+gem 'stripe'
