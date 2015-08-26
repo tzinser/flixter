@@ -73,3 +73,5 @@ gem 'stripe'
 
 #ranking database rows
 gem 'ranked-model'
+
+gem 'jquery-ui-rails'
