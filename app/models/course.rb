@@ -16,7 +16,5 @@ class Course < ActiveRecord::Base
 	def premium?
 		! free?
 	end
-	# def total_cost
-	# 	cost * 1.10
-	# end
+	
 end

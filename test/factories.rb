@@ -1,6 +1,13 @@
 FactoryGirl.define do  factory :enrollment do
     
   end
+
+  factory :course do
+  	title "Test Title"
+  	description "Testing "
+  	cost 0
+  end
+
   factory :lesson do
     
   end
