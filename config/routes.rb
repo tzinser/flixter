@@ -5,9 +5,7 @@ Flixter::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   resource :dashboard, :only =>[:show]
-  
   root 'static_pages#index'
-
   resources :courses, :only => [:index, :show] do
     resources :enrollments, :only => :create
   end
@@ -18,7 +16,7 @@ Flixter::Application.routes.draw do
       resources :lessons, :only => [:new, :create]
     end
     resources :courses, :only => [:new, :create, :show] do
-      resources :sections, :only => [:new, :create] 
+      resources :sections, :only => [:create]
     end
   end
 
