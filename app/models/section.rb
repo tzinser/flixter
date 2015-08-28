@@ -6,4 +6,8 @@ class Section < ActiveRecord::Base
 	ranks :row_order, :with_same => :course_id
 
 	validates :title, :presence => true
+
+	def next_section
+		section = course.sections.where("row_order > ?", self.row_order).rank(:row_order).first
+	end
 end
